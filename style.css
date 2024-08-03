@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #778DA9;
+}
+.container {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    margin-top: 2vh;
+    text-align: center;
+    color: #1B263B;
+}
+#msgs{
+    width: 20vw;
+    height: 60vh;
+    border: 1px solid black;
+    padding: 10px;
+    background-color:#415A77;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #1B263B;
+    color: white;
+    overflow-y: scroll;
+}
+#input{
+    width: 16.3vw;
+    height: 5.2vh;
+    background-color: #1B263B;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 0.8rem;
+}
+input:focus::placeholder {
+    color: transparent;
+}
+input:focus{
+    outline: none;
+}
+::placeholder {
+    color: rgb(213, 211, 211);
+}
+.fa-solid{
+    font-size: 1.4rem;
+    padding-left: 5px;
+    width: 2.3vw;
+    height: 5.5vh;
+    border: 1px solid black;
+}
+/* .text-area{
+    width: 20vw;
+    height: 5vh;
+  
+} */
+button{
+    width: 3.4vw;
+    height: 5.2vh;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #1B263B;
+    color: rgb(213, 211, 211);
+    border: none;
+    font-size: 0.8rem;
+}
+@media screen and (max-width: 480px) {
+    .container {
+        margin-top: 2vh;
+        display: flex;
+        flex-direction: column;
+    }
+    #msgs{
+        width: 60vw;
+        height: 60vh;
+        padding: 10px;
+    }
+    #input{
+        width: 50vw;
+        height: 5.2vh;
+        font-size: 0.8rem;
+    }
+    button{
+        width: 8vw;
+        height: 5.2vh;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 1000px){
+    .container {
+        margin-top: 2vh;
+        display: flex;
+        flex-direction: column;
+    }
+    #msgs{
+        width: 50vw;
+        height: 60vh;
+        padding: 10px;
+    }
+    #input{
+        width: 40vw;
+        height: 5.2vh;
+        font-size: 0.8rem;
+    }
+    button{
+        width: 8vw;
+        height: 5.2vh;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .container {
+        margin-top: 2vh;
+        display: flex;
+        flex-direction: column;
+    }
+    #msgs{
+        width: 60vw;
+        height: 60vh;
+        padding: 10px;
+    }
+    #input{
+        width: 50vw;
+        height: 5.2vh;
+        font-size: 0.8rem;
+    }
+    button{
+        width: 8vw;
+        height: 5.2vh;
+    }
+}
